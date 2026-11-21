@@ -1,0 +1,3 @@
+숨은그림 보기가 이 기능을 다 갖고 있으므로 따로 쓸 일은 거의 없음.
+ · vid2png.py          : 덧붙이기 모드 사진 만들기 (ffmpeg 필요)
+ · make_moving_png.py  : 예시1 밤바다 그림을 만든 코드 (numpy, Pillow 필요)

@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "잠든 그림 깨우기",
+  "version": "0.2.0",
+  "description": "PNG 안에 숨은 동영상을 찾아서 그 자리에서 재생합니다.",
+  "permissions": [],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["parse.js", "content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}
